@@ -30,7 +30,7 @@ const names = [
   }
   
   function render() {
-    // render the freelancers
+    
     const freelancerRows = freelancers.map((freelancer) => {
       const freelancerRow = document.createElement("tr");
       freelancerRow.innerHTML = `
@@ -43,7 +43,7 @@ const names = [
     });
     freelancersTbody.replaceChildren(...freelancerRows);
   
-    // update the average price
+    
     averagePriceSpan.textContent = getAverageStartingPrice();
   }
   
@@ -70,3 +70,4 @@ const names = [
     addFreelancer();
     render();
   }, 3000);
+  
